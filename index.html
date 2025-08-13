@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombay Sweet Shop - Purity Certification</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Using Inter for body and Playfair Display for headings for a classic, trustworthy feel */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Style for the accordion content to be hidden by default */
+        .accordion-content {
+            display: none;
+            transition: max-height 0.3s ease-in-out;
+            overflow: hidden;
+        }
+        /* Style for the accordion button when it's active/open */
+        .accordion-button.active {
+            background-color: #f3f4f6; /* A light gray for active state */
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-gray-800">
+
+    <!-- Main container with padding -->
+    <div class="max-w-2xl mx-auto p-4 sm:p-6 md:p-8">
+
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <!-- Shop Logo Placeholder -->
+            <img src="https://placehold.co/100x100/eab308/422006?text=BSS" alt="Bombay Sweet Shop Logo" class="mx-auto mb-4 rounded-full shadow-md border-4 border-white">
+            <h1 class="text-4xl font-bold text-amber-800">Bombay Sweet Shop</h1>
+            <p class="text-lg text-gray-600 mt-2">A Tradition of Purity & Taste</p>
+        </header>
+
+        <!-- Purity Seal Certification Section -->
+        <section class="bg-white p-6 rounded-2xl shadow-lg mb-8 border border-amber-200">
+            <div class="flex flex-col sm:flex-row items-center gap-6">
+                <!-- Purity Seal SVG Icon -->
+                <div class="flex-shrink-0">
+                    <svg class="w-24 h-24 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Verified for Purity</h2>
+                    <p class="text-gray-700 mt-2">
+                        This establishment is certified for its commitment to using high-quality, pure ingredients and maintaining the highest standards of hygiene and safety in its preparation processes.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">Last Audited: July 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sweets & Ingredients List Section -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-center mb-6 text-amber-800">Our Sweets & Ingredients</h2>
+            <div class="space-y-3">
+                
+                <!-- Accordion Item 1: Kaju Katli -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-4 font-semibold text-lg flex justify-between items-center transition-colors duration-200 hover:bg-gray-100">
+                        <span>Kaju Katli</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-4 pb-4">
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Premium Cashews</li>
+                            <li>Organic Sugar</li>
+                            <li>Purified Water</li>
+                            <li>Edible Silver Leaf (Vark)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2: Motichoor Laddu -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-4 font-semibold text-lg flex justify-between items-center transition-colors duration-200 hover:bg-gray-100">
+                        <span>Motichoor Laddu</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-4 pb-4">
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Gram Flour (Besan)</li>
+                            <li>Pure Ghee</li>
+                            <li>Organic Sugar</li>
+                            <li>Cardamom & Saffron</li>
+                            <li>Melon Seeds (Magaz)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3: Chocolate Barfi -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-4 font-semibold text-lg flex justify-between items-center transition-colors duration-200 hover:bg-gray-100">
+                        <span>Chocolate Barfi</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-4 pb-4">
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Milk Solids (Khoya)</li>
+                            <li>Organic Cane Sugar</li>
+                            <li>Dark Belgian Chocolate</li>
+                            <li>Pure Ghee</li>
+                            <li>Pistachios</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Authenticity & Reports Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-6 text-amber-800">Our Commitment to Authenticity</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- FSSAI Certificate Link -->
+                <a href="fssai.pdf" target="_blank" class="bg-amber-600 text-white text-center font-bold py-3 px-4 rounded-lg shadow-md hover:bg-amber-700 transition-all duration-200 flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    View FSSAI Certificate
+                </a>
+                <!-- Lab Test Reports Link -->
+                <a href="reports/labreports.html" target="_blank" class="bg-amber-600 text-white text-center font-bold py-3 px-4 rounded-lg shadow-md hover:bg-amber-700 transition-all duration-200 flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    View Lab Reports
+                </a>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-12">
+            <p>&copy; 2025 Bombay Sweet Shop. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // JavaScript for the accordion functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Toggle the 'active' class on the button
+                    button.classList.toggle('active');
+                    
+                    // The content is the next element sibling of the button
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('svg');
+
+                    // Toggle the display of the content
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.display = 'block';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
